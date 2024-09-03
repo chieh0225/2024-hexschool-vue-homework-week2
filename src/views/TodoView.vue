@@ -89,7 +89,7 @@ const checkOut = async () => {
     messageCheckOut.value = '驗證成功 UID: ' + response.data.uid
     console.log(response)
   } catch (error) {
-    messageCheckOut.value = '驗證失敗: ' + error.message
+    messageCheckOut.value = '驗證失敗: ' + error.message + ' ' + error.response.data.message
     console.log(error)
   }
 }
